@@ -1,0 +1,34 @@
+{
+    "title": "watchlists",
+    "type": "object",
+    "description": "用户自选股列表",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Primary key, auto-increment"
+        },
+        "user_id": {
+            "type": "string",
+            "description": "User ID from Auth0"
+        },
+        "ts_code": {
+            "type": "string",
+            "description": "Stock code, e.g., 000001.SZ"
+        },
+        "stock_name": {
+            "type": "string",
+            "description": "Stock name"
+        },
+        "added_at": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Time when stock was added to watchlist"
+        }
+    },
+    "required": [
+        "id",
+        "user_id",
+        "ts_code",
+        "stock_name"
+    ]
+}

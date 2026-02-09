@@ -1,0 +1,43 @@
+{
+    "title": "analysis_history",
+    "type": "object",
+    "description": "AI分析历史记录",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Primary key, auto-increment"
+        },
+        "user_id": {
+            "type": "string",
+            "description": "User ID from Auth0"
+        },
+        "ts_code": {
+            "type": "string",
+            "description": "Stock code"
+        },
+        "stock_name": {
+            "type": "string",
+            "description": "Stock name"
+        },
+        "analysis_result": {
+            "type": "string",
+            "description": "AI analysis result: bullish/bearish/neutral"
+        },
+        "analysis_content": {
+            "type": "string",
+            "description": "Full AI analysis content"
+        },
+        "analyzed_at": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Time when analysis was performed"
+        }
+    },
+    "required": [
+        "id",
+        "user_id",
+        "ts_code",
+        "stock_name",
+        "analysis_result"
+    ]
+}

@@ -1,0 +1,57 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Node.js
+node_modules/
+build/
+dist/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Database
+app.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# Uploads
+uploads/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+build/
+dist/
+out/
+
+# Testing
+coverage/
+.coverage
+.pytest_cache/
+
+# Docker
+docker-compose.override.yml
+
+# Misc
+*.pid
+*.seed
+*.pid.lock
